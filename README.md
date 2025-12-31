@@ -8,35 +8,35 @@ Built with **Node.js (Express)** and **Docker**, it offers a production-ready so
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 
--   [Features](#-features)
--   [Architecture & Internals](#-architecture--internals)
--   [Getting Started](#-getting-started)
+-   [Features](#features)
+-   [Architecture & Internals](#architecture--internals)
+-   [Getting Started](#getting-started)
     -   [Prerequisites](#prerequisites)
     -   [Running Locally](#running-locally)
     -   [Running with Docker](#running-with-docker)
--   [Language Support](#-language-support)
--   [API Reference](#-api-reference)
+-   [Language Support](#language-support)
+-   [API Reference](#api-reference)
     -   [Execute Code (`/submit`)](#1-execute-code-submit)
     -   [Generate Tests (`/generate-tests`)](#2-generate-tests-generate-tests)
     -   [Health Check (`/health`)](#3-health-check-health)
--   [Configuration](#-configuration)
+-   [Configuration](#configuration)
 
 ---
 
-## 🚀 Features
+## Features
 
-*   **⚡ Concurrent Execution**: Optimized to run multiple test cases in parallel for a single submission, significantly reducing feedback time for users.
-*   **🛡️ Isolated Environments**: Every submission runs in a temporary, dedicated directory to ensure file system cleanliness and prevent crosstalk.
-*   **🌍 Multi-Language Native Support**: First-class support for **Python 3**, **C++17**, and **Java 17**.
-*   **🏗️ Test Generation API**: Unique support for running C++ "Generator" logic to programmatically create test cases—ideal for problem setters.
-*   **🐳 Docker Native**: Packaged with a `bullseye` base image containing all necessary compilers and runtimes, ensuring identical behavior across dev and prod.
-*   **📊 Detailed Feedback**: Returns granular results for every test case, including stdout, stderr, exit codes, and diff status.
+*   **Concurrent Execution**: Optimized to run multiple test cases in parallel for a single submission, significantly reducing feedback time for users.
+*   **Isolated Environments**: Every submission runs in a temporary, dedicated directory to ensure file system cleanliness and prevent crosstalk.
+*   **Multi-Language Native Support**: First-class support for **Python 3**, **C++17**, and **Java 17**.
+*   **Test Generation API**: Unique support for running C++ "Generator" logic to programmatically create test cases—ideal for problem setters.
+*   **Docker Native**: Packaged with a `bullseye` base image containing all necessary compilers and runtimes, ensuring identical behavior across dev and prod.
+*   **Detailed Feedback**: Returns granular results for every test case, including stdout, stderr, exit codes, and diff status.
 
 ---
 
-## 🧠 Architecture & Internals
+## Architecture & Internals
 
 The Judge API operates as a stateless microservice. Here is the lifecycle of a request:
 
@@ -55,7 +55,7 @@ The Judge API operates as a stateless microservice. Here is the lifecycle of a r
 
 ---
 
-## 🏁 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -95,7 +95,7 @@ If you want to develop on the API logic itself:
 
 ---
 
-## 💻 Language Support
+## Language Support
 
 The Docker image comes pre-installed with the following runtimes:
 
@@ -107,7 +107,7 @@ The Docker image comes pre-installed with the following runtimes:
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 ### 1. Execute Code (`/submit`)
 
@@ -202,7 +202,7 @@ Simple endpoint to verify the service is up.
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 The application is configured via environment variables.
 
