@@ -204,10 +204,11 @@ Simple endpoint to verify the service is up.
 
 ## Configuration
 
-The application is configured via environment variables.
+The application is designed to be **Zero Config**. You do not need to set any environment variables to get started.
+
+However, the following optional variables are available for customization:
 
 | Variable | Description | Default |
 | :--- | :--- | :--- |
-| `PORT` | The primary port the server listens on. | `4001` |
-| `JUDGE_PORT` | Fallback port variable. | - |
-| `MAX_CONCURRENT_TESTS` | (Internal const) Number of tests running in parallel per request. | `3` |
+| `PORT` | The port the server listens on. | `4001` |
+| `JUDGE_PORT` | Alternative port variable (useful for certain PaaS providers). | - |
